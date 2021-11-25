@@ -1,0 +1,5 @@
+create user 'sa'@'localhost' identified by 'sa1234'; -- Create the user
+grant all on exercise1.* to 'sa'@'localhost'; -- Gives all privileges to that user on new db
+Spring tries to lunch by default tzo scripts in resources directory
+•	schema.sql - Create or update the schema.
+•	datan.sqln - Initialize or modify the data in your tables.
