@@ -9,7 +9,8 @@ import java.util.Set;
 import java.time.DayOfWeek;
 @Entity
 public class Schedule {
-    @Id@GeneratedValue
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
     @ManyToMany
     @JoinTable(
